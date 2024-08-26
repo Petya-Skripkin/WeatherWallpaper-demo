@@ -21,14 +21,15 @@ export default function TabLayout() {
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
           ),
+          unmountOnBlur: true
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="upload"
         options={{
-          title: 'Explore',
+          title: 'Upload',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon name={focused ? 'code-slash' : 'code-slash-outline'} color={color} />
+            <TabBarIcon name={focused ? 'cloud-upload-sharp' : 'cloud-upload-outline'} color={color} />
           ),
         }}
       />
